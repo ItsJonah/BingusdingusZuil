@@ -1,0 +1,25 @@
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+div#video-container {
+    position: absolute;
+    z-index: 100;
+    top: 549px;
+    left: 291px;
+    width: 761px;
+    height: 418px;
+    overflow: hidden;
+}
+
+video {
+    width: 100%
+}
+
+img#overlay {
+    width: 100%;
+    transform: translateY(-10px);
+}
