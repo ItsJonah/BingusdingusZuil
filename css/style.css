@@ -23,3 +23,67 @@ img#overlay {
     width: 100%;
     transform: translateY(-10px);
 }
+
+div#loading-border {
+    width: 460px;
+    /* width: 0px; */
+    height: 80px;
+    border: solid black 8px;
+    position: absolute;
+    top: 167px;
+    left: 1398px;
+}
+
+div#loading-bar {
+    /* width: 476px; */
+    width: 0px;
+    height: 80px;
+    background-color: red;
+    position: absolute;
+    top: 175px;
+    left: 1398px;
+
+    animation-name: loading-bar;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+}
+
+@keyframes loading-bar {
+    0% {
+        width: 0px;
+    }
+
+    10% {
+        width: calc(476px * 0.3)
+    }
+
+    20% {
+        width: calc(476px * 0.33)
+    }
+
+    30% {
+        width: calc(476px * 0.2)
+    }
+
+    40% {
+        width: calc(476px * 0.3)
+    }
+
+    50% {
+        width: calc(476px * 0.3)
+    }
+
+    90% {
+        width: calc(476px * 0.9)
+    }
+
+    90% {
+        width: calc(476px * 0.95)
+    }
+
+    100% {
+        width: 476px;
+    }
+}

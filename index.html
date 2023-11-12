@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BigBrotherZuil</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- <script defer src="js/webcam.js"></script> -->
 </head>
 <body>
     <img src="assets/background.jpg" alt="">
@@ -13,16 +14,7 @@
         <video id='target' autoplay></video>
         <img src="assets/cam_overlay.png" alt="" id="overlay">
     </div>
-    <script>
-        var video = document.getElementById('target');
-
-        navigator.mediaDevices.getUserMedia({
-            video: true, 
-            audio:false
-        }).then( stream => {
-            video.srcObject = stream;
-            video.play();
-        }).catch( error => console.log(error) );
-    </script>
+    <div id="loading-bar"></div>
+    <div id="loading-border"></div>
 </body>
 </html>
